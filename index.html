@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Form Đăng Ký Người Chơi</h2>
+        <form id="gameForm" action="process.php" method="post">
+            <label for="username">Tên người chơi:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="game_story">Cốt truyện game:</label>
+            <textarea id="game_story" name="game_story" required></textarea>
+
+            <input type="submit" value="Đăng Ký">
+        </form>
+    </div>
+
+</body>
+</html>
